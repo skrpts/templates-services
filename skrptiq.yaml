@@ -3,7 +3,7 @@ id: "deaca373-bebe-4b5a-81ea-3be58c05490a"
 name: "templates-services"
 display_name: "Service Templates"
 description: "LLM providers, MCP servers, external services, and vector database templates"
-version: "1.0.0"
+version: "1.0.1"
 engine: ">=1.0.0"
 
 # --- Attribution ---
@@ -34,9 +34,9 @@ template: true
 contents:
   skills: 0
   prompts: 0
-  workflows: 1
+  workflows: 0
   services: 27
   sources: 0
   documents: 0
   assets: 0
-  total: 28
+  total: 27
