@@ -1,9 +1,9 @@
 # --- Identity ---
-id: "deaca373-bebe-4b5a-81ea-3be58c05490a"
+id: "155f70b0-f186-455a-ba47-7047ec118428"
 name: "templates-services"
 display_name: "Service Templates"
 description: "LLM providers, MCP servers, external services, and vector database templates"
-version: "1.0.2"
+version: "1.0.4"
 engine: ">=0.1.0"
 
 # --- Attribution ---
@@ -24,7 +24,17 @@ tags:
 requires:
   services:
     - "llm-service"
-  permissions: []
+  permissions:
+    - "network:api.openai.com"
+    - "network:api.anthropic.com"
+    - "network:api.cohere.ai"
+    - "network:api.mistral.ai"
+    - "network:generativelanguage.googleapis.com"
+    - "network:api.github.com"
+    - "network:api.linear.app"
+    - "network:api.notion.com"
+    - "network:slack.com"
+    - "network:localhost"
   data_handling: []
 
 # --- Manifest flags ---
@@ -40,3 +50,17 @@ contents:
   documents: 0
   assets: 0
   total: 27
+
+security:
+  status: "pass"
+  scanned_at: "2026-07-14T12:19:58.461Z"
+  scanner_version: "3.3.0"
+  syntactic: "pass"
+  structural: "pass"
+  detected:
+    services: []
+    permissions: ["network:api.anthropic.com", "network:localhost", "network:api.cohere.ai", "network:api.github.com", "network:generativelanguage.googleapis.com", "network:api.linear.app", "network:api.mistral.ai", "network:api.notion.com", "network:api.openai.com", "network:slack.com"]
+    data_handling: []
+  undeclared: []
+  warnings: []
+  report_url: "https://hub.skrptiq.ai/skrpts/templates-services/security"
